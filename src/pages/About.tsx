@@ -12,12 +12,12 @@ export const About = () => {
 
     return (
         <div id="about" className="layout-height">
-            <div id="about-picture">
+            <div id="about-picture" className="flex-item">
                 <div>
 
                 </div>
             </div>
-            <div id="about-content">
+            <div id="about-content" className="flex-item">
                 <Title subString={"About Me"} title={"My Resume"}/>
                 <p>
                     Web developer & video editor with over <b>6+</b> years of experience in full-stack development,

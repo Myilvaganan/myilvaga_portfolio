@@ -22,7 +22,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
+
 
 #about > div {
   width: 50%;
@@ -32,6 +35,7 @@ body {
 #about-picture{
   margin-right: 2rem;
   display: flex;
+  flex: 1;
   justify-content: flex-end;
 }
 
@@ -52,6 +56,26 @@ body {
 .name{
   font-size: 46.2px;
   font-weight: bolder;
+}
+
+#about-content {
+  flex: 1;
+}
+
+@media (max-width: 1024px) and (min-width: 480px) {
+  #about {
+    flex-direction: column; /* Stack the divs vertically */
+    height: auto; /* Adjust height for mobile */
+  }
+
+  #about > div {
+    width: 100%;
+  }
+
+  #about-picture, #about-content {
+    width: 100%; /* Ensure both divs take up full width */
+    margin: 25px; /* Add vertical spacing between divs */
+  }
 }
 
 #about-content > p {
