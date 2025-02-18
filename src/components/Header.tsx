@@ -39,7 +39,7 @@ function Header() {
                     <Nav className="justify-content-center w-100">
                         {
                             navLists.map((navList) => (
-                                <Nav.Link key={navList.link} href={navList.link} style={{ color: "aliceblue", marginRight: "15px" }}>{navList.name}</Nav.Link>
+                                <Nav.Link key={navList.link} href={navList.link} style={{ color: "aliceblue", marginRight: "15px", fontWeight: "300" }}>{navList.name}</Nav.Link>
                             ))
                         }
                     </Nav>

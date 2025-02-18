@@ -5,7 +5,51 @@ body {
   background: #1b2435;
   font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
+}
+
+.line-spacing-low {
+  line-height: 0.1px;
+  width: fit-content;
+}
+
+.layout-height {
+  height: 820px;
+}
+
+#about {
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about > div {
+  width: 50%;
+  height: 70%;
+}
+
+#about-picture{
+  margin-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#about-picture > div {
+  width: 50%;
+  height: 85%;
+  background-color: rgb(89, 248, 35);
+}
+
+#about-content > p {
+  margin-top: 1.2rem;
+  color: aliceblue;
+  font-weight: 200;
+  width: 80%;
+}
+
+#about-content > button {
+  padding: 10px 45px;
 }
 
 .pr-text {
@@ -48,7 +92,7 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(255, 255, 255, 0.5);
-  transform: skewX(-30deg);
+  transform: skewX(-10deg);
   transition: none;
 }
 
