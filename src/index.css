@@ -1,65 +1,66 @@
 body {
   margin: 0;
-  background: linear-gradient(180deg, rgb(117, 81, 194), rgb(255, 255, 255));
-  display: flex;
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  background: #1b2435;
+  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
   height: 100vh;
   width: 100vw;
-  justify-content: center;
-  align-items: center;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
+.pr-text {
+  color: aliceblue!important;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-  color: white;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.highlight{
+  color: #00bf63;
 }
 
-ul {
-  padding-inline-start: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  margin: 8px 0;
-  border: 1px solid black;
-  gap: 1px;
-  background-color: black;
-  border-radius: 8px;
-  overflow: auto;
+.bg-highlight{
+  background: #c1ff72;
 }
 
-li {
-  background-color: white;
-  padding: 8px;
+#contact-button{
+  background-color: #00bf63;
+  border-color: #c1ff72;
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 3px 45px;
+  box-shadow: #c1ff72 0 3px 0;
+  font-weight: 400;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
 }
 
-li:hover {
-  background: #dadbf9;
+#contact-button:hover {
+  border-color: #00bf63;
+  background-color: #c1ff72;
+  color: #1b2435;
+  box-shadow: #00bf63 0 3px 0;
 }
 
-a {
-  font-weight: 800;
-  text-decoration: none;
+#contact-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  transform: skewX(-30deg);
+  transition: none;
+}
+
+.contact-button.shine::after {
+  animation: shine-effect 0.6s ease-in-out;
+}
+
+@keyframes shine-effect {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
 }
