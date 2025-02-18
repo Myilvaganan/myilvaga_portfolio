@@ -14,7 +14,7 @@ body {
 }
 
 .layout-height {
-  height: 820px;
+  height: 980px;
 }
 
 #about {
@@ -26,7 +26,7 @@ body {
 
 #about > div {
   width: 50%;
-  height: 70%;
+  height: 60%;
 }
 
 #about-picture{
@@ -39,6 +39,19 @@ body {
   width: 50%;
   height: 85%;
   background-color: rgb(89, 248, 35);
+}
+
+.header-box{
+  height: 60%;
+}
+
+.name-box{
+  margin-left: 6.5%;
+}
+
+.name{
+  font-size: 46.2px;
+  font-weight: bolder;
 }
 
 #about-content > p {
@@ -107,4 +120,49 @@ body {
   100% {
     left: 100%;
   }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c1ff72;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-underline-animation.left::after {
+  transform-origin: bottom right;
+}
+
+.hover-underline-animation.left:hover::after {
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation.center::after {
+  transform-origin: bottom center;
+}
+
+.hover-underline-animation.center:hover::after {
+  transform-origin: bottom center;
+}
+
+.hover-underline-animation.right::after {
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation.right:hover::after {
+  transform-origin: bottom right;
 }
