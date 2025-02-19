@@ -2,11 +2,26 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #1b2435;
-  font-family: Poppins, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background: #1b2435!important;
+  font-family: Poppins, Inter, Roboto, Helvetica, Arial, sans-serif!important;
   height: 100vh;
   width: 100%;
 }
+
+.bg-dark-green {
+  background-color: #006434;
+}
+
+#contact > img {
+  opacity: 0.05;
+}
+
+.ls-1 { letter-spacing: 1px; }
+.ls-2 { letter-spacing: 2px; }
+.ls-3 { letter-spacing: 3px; }
+.ls-4 { letter-spacing: 4px; }
+.ls-5 { letter-spacing: 5px; }
+.ms-6 { margin-left: 6%; }
 
 .line-spacing-low {
   line-height: 0.1px;
@@ -14,11 +29,18 @@ body {
 }
 
 .layout-height {
-  height: 980px;
+  height: 820px;
+}
+
+.half-layout {
+  height: 410px;
+}
+
+#about, #services, #skills {
+  background-color: #181818;
 }
 
 #about {
-  background-color: #181818;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +84,7 @@ body {
   flex: 1;
 }
 
-@media (max-width: 1024px) and (min-width: 480px) {
+@media (max-width: 1024px) and (min-width: 0px) {
   #about {
     flex-direction: column; /* Stack the divs vertically */
     height: auto; /* Adjust height for mobile */
@@ -94,11 +116,11 @@ body {
 }
 
 .highlight{
-  color: #00bf63;
+  color: #00bf63!important;
 }
 
 .bg-highlight{
-  background: #c1ff72;
+  background: #c1ff72!important;
 }
 
 #contact-button{
