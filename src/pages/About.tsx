@@ -16,15 +16,15 @@ export const About = () => {
   };
 
   return (
-    <div id="about" className="layout-height">
+    <div id="about" className="layout-height p-5">
       <Container>
         <Row>
-          <Col md={6} lg={6}>
+          <Col md={12} lg={6}>
             <div id="about-picture" className="d-flex justify-content-end">
               <div></div>
             </div>
           </Col>
-          <Col md={6} lg={6}>
+          <Col md={12} lg={6}>
             <div id="about-content">
               <PageTitle subString={"About Me"} title={"My Resume"} />
               <p>

@@ -53,8 +53,18 @@ body {
   height: 410px;
 }
 
+@media screen and (max-width: 768px) {
+  .layout-height {
+    height: fit-content;
+  }
+
+  .half-layout {
+    height: fit-content;
+  }
+}
+
 #skills {
-  height: 620px;
+  height: fit-content;
 }
 
 #about,

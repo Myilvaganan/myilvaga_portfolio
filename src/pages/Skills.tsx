@@ -17,7 +17,7 @@ export const Skills = () => {
       <Container className="ms-6 pt-5">
         <PageTitle subString={"Skills Acquired"} title={"What I Know?"} />
         <Row className="g-4 justify-content-center mt-3">
-          <Col md={4} lg={3}>
+          <Col md={4} lg={3} sm={12}>
             <Card className="w-100 h-100 d-flex flex-column p-4 bg-dark bg-opacity-25">
               <Title title={"LANGUAGES"} subString={"PROGRAMMING"} />
               <div className="d-flex h-100 align-items-sm-center">
@@ -46,7 +46,7 @@ export const Skills = () => {
               </div>
             </Card>
           </Col>
-          <Col md={8} lg={6}>
+          <Col md={8} lg={6} sm={12}>
             <Card className="w-100 h-100 d-flex flex-column p-4 bg-dark bg-opacity-25">
               <Title title={"FRAMEWORK"} subString={"LIBRARIES AND"} />
               <div className="d-flex h-100 align-items-sm-center mt-4">
@@ -90,7 +90,7 @@ export const Skills = () => {
               </div>
             </Card>
           </Col>
-          <Col md={4} lg={3}>
+          <Col md={12} lg={3} sm={12}>
             <Card className="w-100 h-100 d-flex flex-column p-4 bg-dark bg-opacity-25">
               <Title
                 title={"MEDIA"}

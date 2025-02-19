@@ -34,7 +34,7 @@ export const Contact = () => {
   return (
     <div
       id="contact"
-      className="half-layout d-flex flex-column justify-content-center align-items-center bg-dark-green position-relative"
+      className="half-layout d-flex flex-column justify-content-center align-items-center bg-dark-green position-relative p-5"
     >
       <h1 className="pr-text fw-bolder display-4">
         Myil<span className="highlight">vaganan</span>
