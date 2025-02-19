@@ -14,7 +14,7 @@ const contactMedium = [
   },
   {
     icon: <FaWhatsapp />,
-    link: "https://wa.me/9489506513",
+    link: "https://wa.me/8925162153",
   },
   {
     icon: <FaLinkedinIn />,
