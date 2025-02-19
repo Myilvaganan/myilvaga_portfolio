@@ -1,5 +1,6 @@
 import {Container, Nav, Navbar} from "react-bootstrap";
 import {ButtonWrapper} from "./ButtonWrapper.tsx";
+import logo from "../assets/MYILLOGO.svg";
 
 const navLists = [
     {
@@ -24,8 +25,8 @@ function Header() {
     return (
         <Navbar expand="lg" style={{padding: "10px"}}>
             <Container>
-                <Navbar.Brand href="#" style={{color: "aliceblue", fontWeight: "bold"}}>
-                    TECHIE <span style={{color: "#00bf63"}}>MYIL</span>
+                <Navbar.Brand className="d-flex justify-content-center align-items-center" href="#" style={{color: "aliceblue", fontWeight: "bold"}}>
+                    <img src={logo} alt="Logo" width="50" height="50" className="d-inline-block align-top bg-light rounded-5 p-2 m-2" /> TECHIE <span style={{color: "#00bf63"}}>MYIL</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="highlight bg-highlight"/>
                 <Navbar.Collapse id="basic-navbar-nav">
