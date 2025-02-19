@@ -42,7 +42,7 @@ function Header() {
                             ))
                         }
                     </Nav>
-                    <a href="#contact" style={{textDecoration: "none"}}><ButtonWrapper text="Contact"/></a>
+                    <a href="#contact" style={{textDecoration: "none"}}><ButtonWrapper text="Contact" onClickHandler={() => {}}/></a>
 
                 </Navbar.Collapse>
             </Container>

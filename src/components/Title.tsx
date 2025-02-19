@@ -12,26 +12,13 @@ export const Title = ({
 
 
 export const PageTitle = ({
-                          subString,
-                          title
-                      }: { subString: string, title: string }) => {
+                              subString,
+                              title
+                          }: { subString: string, title: string }) => {
     return (
         <div className="line-spacing-low">
             <p className="highlight">{subString}</p>
             <h2 className="pr-text">{title}</h2>
-        </div>
-    );
-};
-
-
-export const SkillTitle = ({
-                              subString,
-                               content
-                          }: { subString: string, content: string }) => {
-    return (
-        <div className="line-spacing-low">
-            <p className="highlight">{subString}</p>
-            <p className="pr-text">{content}</p>
         </div>
     );
 };

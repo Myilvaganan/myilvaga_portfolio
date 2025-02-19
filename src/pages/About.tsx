@@ -1,7 +1,20 @@
 import {PageTitle} from "../components/Title.tsx";
 import {ButtonWrapper} from "../components/ButtonWrapper.tsx";
+import {fetchResumeUrl} from "../api";
 
 export const About = () => {
+
+    const handleDownload = async () => {
+        const resumeURL = await fetchResumeUrl();
+        if (resumeURL) {
+            const link = document.createElement('a');
+            link.href = resumeURL;
+            link.target = "_blank"
+            link.download = 'filename.pdf';
+            link.click();
+        }
+    }
+
     return (
         <div id="about" className="layout-height">
             <div id="about-picture" className="flex-item">
@@ -28,7 +41,7 @@ export const About = () => {
                     developing a complex web app or editing a cinematic video, I aim for excellence and creativity in
                     all my work.
                 </p>
-                <ButtonWrapper text="Download CV"/>
+                <ButtonWrapper text="Download CV" onClickHandler={handleDownload}/>
             </div>
 
         </div>
