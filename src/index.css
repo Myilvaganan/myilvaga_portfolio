@@ -61,6 +61,11 @@ body {
   .half-layout {
     height: fit-content;
   }
+
+  #about-content > p {
+    width: 100%!important;
+    text-align:justify;
+  }
 }
 
 #skills {
