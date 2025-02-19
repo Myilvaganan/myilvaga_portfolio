@@ -31,7 +31,7 @@ export const Contact = () => {
             <h1 className="pr-text fw-bolder display-4">Myil<span className="highlight">vaganan</span></h1>
             <p className="pr-text fw-light">Chamundeshwari Nagar, Devarachikkana Halli,</p>
             <p className="pr-text fw-light">Begur-Hobli Road, Bangalore - 560068</p>
-            <div className="d-flex justify-content-center align-items-center">
+            <div className="d-flex justify-content-center align-items-center z-1">
                 {
                     contactMedium.map((item, index) => (
                     <div key={index} className="pr-text display-5 p-2">
