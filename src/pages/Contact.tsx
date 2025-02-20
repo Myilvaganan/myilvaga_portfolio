@@ -6,6 +6,8 @@ import {
 } from "react-icons/fa6";
 import { FaMailBulk } from "react-icons/fa";
 import imageURL from "../assets/2669099_14624.jpg";
+import { motion } from "motion/react";
+import { useInView } from "react-intersection-observer";
 
 const contactMedium = [
   {
@@ -31,6 +33,7 @@ const contactMedium = [
 ];
 
 export const Contact = () => {
+  const { ref, inView } = useInView({ threshold: 0.5 });
   return (
     <div
       id="contact"
@@ -45,7 +48,14 @@ export const Contact = () => {
       <p className="pr-text fw-light">Begur-Hobli Road, Bangalore - 560068</p>
       <div className="d-flex justify-content-center align-items-center z-1">
         {contactMedium.map((item, index) => (
-          <div key={index} className="pr-text display-5 p-2">
+          <motion.div
+            ref={ref}
+            initial={{ rotate: 0 }}
+            animate={{ rotate: inView ? 360 : 0 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
+            key={index}
+            className="pr-text display-5 p-2"
+          >
             <a
               className="text-decoration-none pr-text"
               href={item.link}
@@ -53,7 +63,7 @@ export const Contact = () => {
             >
               {item.icon}
             </a>
-          </div>
+          </motion.div>
         ))}
       </div>
       <img

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { motion } from "motion/react";
 
 export const ImageCard = (props: { title: string; link: string }) => {
   const cardRef = useRef(null);
@@ -46,7 +47,12 @@ export const ImageCard = (props: { title: string; link: string }) => {
       className={`rounded-3 d-flex flex-column justify-content-center align-items-center ls-1 card-animate ${isVisible ? "animate" : ""}`}
     >
       <h6 className="highlight fw-semibold ">{props.title.toUpperCase()}</h6>
-      <div className="rounded-3">
+      <motion.div
+        whileHover={{ scale: 1.2 }}
+        whileFocus={{ scale: 0 }}
+        whileTap={{ scale: 0.56 }}
+        className="rounded-3"
+      >
         <img
           className="rounded-3 p-2"
           loading="lazy"
@@ -55,7 +61,7 @@ export const ImageCard = (props: { title: string; link: string }) => {
           width={250}
           height={150}
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

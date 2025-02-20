@@ -63,8 +63,8 @@ body {
   }
 
   #about-content > p {
-    width: 100%!important;
-    text-align:justify;
+    width: 100% !important;
+    text-align: justify;
   }
 }
 
@@ -293,4 +293,20 @@ body {
 .bounce {
   cursor: pointer;
   animation: bounce 1s ease-in-out;
+}
+
+.highlight-hover {
+  transition:
+    background-color 0.4s ease-in-out,
+    transform 0.2s ease;
+  padding: 2px;
+  border-radius: 5px;
+  cursor: copy;
+}
+
+.highlight-hover:hover {
+  background-color: aliceblue;
+  color: #1b2435 !important;
+  font-weight: 400 !important;
+  transform: scale(1.05);
 }

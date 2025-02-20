@@ -2,6 +2,7 @@ import { PageTitle } from "../components/Title.tsx";
 import { ButtonWrapper } from "../components/ButtonWrapper.tsx";
 import { fetchResumeUrl } from "../api";
 import { Container, Row, Col } from "react-bootstrap";
+import Typewriter from "typewriter-effect";
 
 export const About = () => {
   const handleDownload = async () => {
@@ -27,7 +28,7 @@ export const About = () => {
           <Col md={12} lg={6}>
             <div id="about-content">
               <PageTitle subString={"About Me"} title={"My Resume"} />
-              <p>
+              <p className="highlight-hover">
                 Web developer & video editor with over <b>6+</b> years of
                 experience in full-stack development, specializing in{" "}
                 <strong className="highlight">
@@ -39,7 +40,7 @@ export const About = () => {
                 I bring a unique problem-solving approach to both tech and
                 creative projects.
               </p>
-              <p>
+              <p className="highlight-hover">
                 I'm passionate about coding, continually learning new
                 technologies, and applying them to create efficient, innovative
                 solutions. Alongside my tech skills, I'm a video editing

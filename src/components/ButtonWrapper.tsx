@@ -1,5 +1,6 @@
 import { Button } from "react-bootstrap";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export const ButtonWrapper = ({
   text,
@@ -17,12 +18,17 @@ export const ButtonWrapper = ({
   };
 
   return (
-    <Button
-      id="contact-button"
-      className={`contact-button ${isShining ? "shine" : ""}`}
-      onClick={handleClick}
+    <motion.div
+      animate={{ y: [0, -10, 0] }}
+      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
     >
-      <strong>{text}</strong>
-    </Button>
+      <Button
+        id="contact-button"
+        className={`contact-button ${isShining ? "shine" : ""}`}
+        onClick={handleClick}
+      >
+        <strong>{text}</strong>
+      </Button>
+    </motion.div>
   );
 };
