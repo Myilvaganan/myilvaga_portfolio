@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 export const Skills = () => {
-  const { ref, inView } = useInView({ threshold: 0.3 });
+  const { ref, inView } = useInView({ threshold: 0.1 });
 
   const animateParams = {
     initial: { opacity: 0, scale: 0.45 },
@@ -22,7 +22,7 @@ export const Skills = () => {
     transition: { duration: 1.5, ease: "easeOut" },
   };
   return (
-    <div id="skills" className="layout-height">
+    <div id="skills" className="layout-height" ref={ref}>
       <Container className="ms-6 pt-5">
         <PageTitle subString={"Skills Acquired"} title={"What I Know?"} />
         <Row className="g-4 justify-content-center mt-3">
@@ -30,7 +30,6 @@ export const Skills = () => {
             <Card className="w-100 h-100 d-flex flex-column p-4 bg-dark bg-opacity-25">
               <Title title={"LANGUAGES"} subString={"PROGRAMMING"} />
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center"
               >
@@ -42,7 +41,6 @@ export const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center"
               >
@@ -54,7 +52,6 @@ export const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center"
               >
@@ -71,7 +68,6 @@ export const Skills = () => {
             <Card className="w-100 h-100 d-flex flex-column p-4 bg-dark bg-opacity-25">
               <Title title={"FRAMEWORK"} subString={"LIBRARIES AND"} />
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center mt-4"
               >
@@ -86,7 +82,6 @@ export const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center mt-4"
               >
@@ -104,7 +99,6 @@ export const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center mt-4"
               >
@@ -130,7 +124,6 @@ export const Skills = () => {
                 subString={"softwares & Tools and".toUpperCase()}
               />
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center"
               >
@@ -142,7 +135,6 @@ export const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center"
               >
@@ -154,7 +146,6 @@ export const Skills = () => {
                 </div>
               </motion.div>
               <motion.div
-                ref={ref}
                 {...animateParams}
                 className="d-flex h-100 align-items-sm-center"
               >

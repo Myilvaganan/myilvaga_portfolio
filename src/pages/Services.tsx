@@ -41,9 +41,9 @@ export const Services = () => {
       <Container className="ms-6 pt-5">
         <PageTitle subString={"My Services"} title={"What I Do?"} />
         <Container className="py-5">
-          <Row className="g-4 w-100">
+          <Row className="g-3 w-100">
             {servicesList.map((service, index) => (
-              <Col md={6} lg={4} key={index} className="col-md-4">
+              <Col md={6} sm={12} lg={4} key={index}>
                 <ImageCard title={service.title} link={service.link} />
               </Col>
             ))}

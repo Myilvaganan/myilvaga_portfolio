@@ -44,7 +44,7 @@ export const ImageCard = (props: { title: string; link: string }) => {
         height: "200px",
         fontFamily: "Roboto",
       }}
-      className={`rounded-3 d-flex flex-column justify-content-center align-items-center ls-1 card-animate ${isVisible ? "animate" : ""}`}
+      className={`rounded-3 d-flex w-100 flex-column justify-content-center align-items-center ls-1 card-animate ${isVisible ? "animate" : ""}`}
     >
       <h6 className="highlight fw-semibold ">{props.title.toUpperCase()}</h6>
       <motion.div
