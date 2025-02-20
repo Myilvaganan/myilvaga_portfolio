@@ -2,7 +2,6 @@ import { PageTitle } from "../components/Title.tsx";
 import { ButtonWrapper } from "../components/ButtonWrapper.tsx";
 import { fetchResumeUrl } from "../api";
 import { Container, Row, Col } from "react-bootstrap";
-import Typewriter from "typewriter-effect";
 
 export const About = () => {
   const handleDownload = async () => {
