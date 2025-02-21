@@ -38,15 +38,10 @@ export const ImageCard = (props: { title: string; link: string }) => {
   return (
     <div
       ref={cardRef}
-      style={{
-        background: "#313331",
-        width: "350px",
-        height: "200px",
-        fontFamily: "Roboto",
-      }}
+      style={cardStyle}
       className={`rounded-3 d-flex w-100 flex-column justify-content-center align-items-center ls-1 card-animate ${isVisible ? "animate" : ""}`}
     >
-      <h6 className="highlight fw-semibold ">{props.title.toUpperCase()}</h6>
+      <h6 className="fw-semibold " style={{color: "#034f2a"}}>{props.title.toUpperCase()}</h6>
       <motion.div
         whileHover={{ scale: 1.2 }}
         whileFocus={{ scale: 0 }}
@@ -65,3 +60,14 @@ export const ImageCard = (props: { title: string; link: string }) => {
     </div>
   );
 };
+
+const cardStyle = {
+  width: "350px",
+  height: "200px",
+  fontFamily: "Roboto",
+  backgroundColor: "#e5e5f7",
+  opacity: "0.8",
+
+  backgroundImage: "repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #a8a8a855, #a8a8a8 )"
+};
+

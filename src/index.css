@@ -234,12 +234,14 @@ body {
 
 .card-animate {
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0; /* Initially hidden */
   transform: translateY(50px); /* Start from below the screen */
   transition:
     opacity 0.25s ease,
     transform 0.5s ease; /* Smooth transition */
+  box-shadow:
+          0 2.8px 2.2px rgb(3, 79, 42),
+          0 6.7px 5.3px rgb(3, 79, 42)
 }
 
 /* Custom fade-in animation */
