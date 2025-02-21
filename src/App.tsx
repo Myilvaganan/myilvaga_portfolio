@@ -16,16 +16,16 @@ function App() {
 
   return (
     <div className="">
-        <video
-            className="position-absolute w-100 h-100 object-fit-cover z-n1  opacity-75"
-            autoPlay
-            loop
-            muted
-            playsInline
-        >
-            <source src={bgVideo} type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
+      <video
+        className="position-absolute w-100 h-100 object-fit-cover z-n1  opacity-75"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src={bgVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <motion.div
         id="scroll-indicator"
         style={{
