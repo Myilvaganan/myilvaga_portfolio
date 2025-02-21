@@ -42,10 +42,10 @@ export const Contact = () => {
       <h1 className="pr-text fw-bolder display-4">
         Myil<span className="highlight">vaganan</span>
       </h1>
-      <p className="pr-text fw-light">
+      <p className="pr-text fw-light" style={fw}>
         Chamundeshwari Nagar, Devarachikkana Halli,
       </p>
-      <p className="pr-text fw-light">Begur-Hobli Road, Bangalore - 560068</p>
+      <p className="pr-text fw-light" style={fw}>Begur-Hobli Road, Bangalore - 560068</p>
       <div className="d-flex justify-content-center align-items-center z-1">
         {contactMedium.map((item, index) => (
           <motion.div
@@ -66,11 +66,18 @@ export const Contact = () => {
           </motion.div>
         ))}
       </div>
+
       <img
         src={imageURL}
         alt="Background"
         className="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
       />
+      <p style={fw} className="pt-5 pr-text">&#169; {new Date().getFullYear() } All rights reserved.</p>
     </div>
   );
+};
+
+
+const fw = {
+  "fontWeight": "200"
 };

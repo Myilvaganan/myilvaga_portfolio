@@ -9,7 +9,7 @@ body {
 }
 
 .bg-dark-green {
-  background-color: #006434;
+  background-color: #03331b;
 }
 
 #contact > img {
@@ -78,6 +78,10 @@ body {
   background-color: #181818;
 }
 
+.pr-text {
+  color: aliceblue !important;
+}
+
 #about {
   display: flex;
   justify-content: center;
@@ -124,10 +128,6 @@ body {
 
 #about-content > button {
   padding: 10px 45px;
-}
-
-.pr-text {
-  color: aliceblue !important;
 }
 
 .highlight {
