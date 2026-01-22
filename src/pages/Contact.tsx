@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-no-target-blank */
+/* eslint-disable react/react-in-jsx-scope */
 import {
   FaInstagram,
   FaLinkedinIn,

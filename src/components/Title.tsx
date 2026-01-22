@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 export const Title = ({
   subString,
   title,

@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import Header from "../components/Header.tsx";
 import Container from "react-bootstrap/Container";
 
@@ -15,7 +16,7 @@ export const Home = () => {
           Myil<span className="highlight">vaganan</span>
         </p>
         <p className="pr-text">
-          Web Developer | Software Engineer | Video Editor
+          Senior Software Engineer
         </p>
       </div>
     </Container>

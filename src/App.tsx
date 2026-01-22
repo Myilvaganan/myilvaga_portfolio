@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Home } from "./pages/Home.tsx";
 import { About } from "./pages/About.tsx";
 import { Skills } from "./pages/Skills.tsx";

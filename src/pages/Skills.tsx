@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Card, Col, Container, Row } from "react-bootstrap";
 import {
   FaCloud,
@@ -78,7 +79,7 @@ export const Skills = () => {
                   <p className="lg-highlight line-spacing-low">
                     Front-End Development
                   </p>
-                  <p>React.js, Next.js, Redux-toolkit, Jest, Enzyme, Cypress</p>
+                  <p>React.js, Next.js, Redux-toolkit, Jest, Enzyme, Cypress, websocket.io</p>
                 </div>
               </motion.div>
               <motion.div
@@ -93,8 +94,8 @@ export const Skills = () => {
                     Back-End Development
                   </p>
                   <p>
-                    Node.js, Express.js, MongoDb, MySQL, Junit, Springboot,
-                    Mockito, Django
+                    Node.js, Express.js, Nest.js, MongoDb, MySQL, Junit, Springboot,
+                    Mockito, Django, Pytorch basics, Tensorflow basics, AI/ML 
                   </p>
                 </div>
               </motion.div>
@@ -112,6 +113,10 @@ export const Skills = () => {
                   <p>
                     AWS cloud services like EC2, S3, Amplify, DynamoDB, API
                     Gateway, Cognito, App Config etc.,
+                  </p>
+                  <p>
+                    Azure services like app service, iot, webpubsub, singalR,
+                    servicebus, cosmosdb, static web app, redis cache, storage etc.,
                   </p>
                 </div>
               </motion.div>

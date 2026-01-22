@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { ButtonWrapper } from "./ButtonWrapper.tsx";
 import logo from "../assets/MYILLOGO.svg";

@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { PageTitle } from "../components/Title.tsx";
 import { Col, Container, Row } from "react-bootstrap";
 import { ImageCard } from "../components/ImageCard.tsx";

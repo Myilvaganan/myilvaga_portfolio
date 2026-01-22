@@ -1,7 +1,9 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { PageTitle } from "../components/Title.tsx";
 import { ButtonWrapper } from "../components/ButtonWrapper.tsx";
 import { fetchResumeUrl } from "../api";
 import { Container, Row, Col } from "react-bootstrap";
+import profile from "../assets/profile_image_2.png";
 
 export const About = () => {
   const handleDownload = async () => {
@@ -21,35 +23,20 @@ export const About = () => {
         <Row>
           <Col md={12} lg={6}>
             <div id="about-picture" className="d-flex justify-content-end">
-              <div></div>
+                <img src={profile} alt="profile" width={400} height={600}/>
             </div>
           </Col>
           <Col md={12} lg={6}>
             <div id="about-content">
-              <PageTitle subString={"About Me"} title={"My Resume"} />
+              <PageTitle subString={"About Me"} title={"Summary"} />
               <p className="highlight-hover">
-                Web developer & video editor with over <b>6+</b> years of
-                experience in full-stack development, specializing in{" "}
-                <strong className="highlight">
-                  React, Node.js, and the MERN stack
-                </strong>
-                . Proficient in building scalable, cloud-native applications
-                using AWS, focusing on performance optimization and seamless
-                user experience. With a background in Mechatronics engineering,
-                I bring a unique problem-solving approach to both tech and
-                creative projects.
+                Senior Software Engineer with nearly <b>7+</b> years of experience delivering scalable, production-grade full-stack applications across retail monitoring, IoT, and enterprise platforms. Strong hands-on expertise in Python, Node.js (NestJS/Express), React.js, and Next.js, with deep exposure to cloud-native development across AWS and Azure. Skilled in designing secure and high-performance REST APIs, building real-time dashboards, and implementing event-driven architectures for streaming data and operational monitoring.
               </p>
               <p className="highlight-hover">
-                I'm passionate about coding, continually learning new
-                technologies, and applying them to create efficient, innovative
-                solutions. Alongside my tech skills, I'm a video editing
-                enthusiast, experienced in crafting engaging visuals and
-                storytelling through dynamic content. Combining my technical
-                expertise with a creative flair, I thrive in environments where
-                I can push boundaries and merge art with technology, delivering
-                impactful, high-quality digital experiences. Whether it's
-                developing a complex web app or editing a cinematic video, I aim
-                for excellence and creativity in all my work.
+                At CGI, I work on retail proactive monitoring solutions for fuel operations, building dashboard APIs, enabling low-latency real-time updates using Azure Web PubSub and Service Bus, and developing Python-based IoT event handlers for reliable edge-to-cloud telemetry processing. I have also contributed to EV alerting systems by implementing rule-based alert generation and configurable evaluation logic. Additionally, I support deployment automation by integrating deployment APIs with Ansible workflows and publishing live deployment status updates to the UI for real-time visibility.
+              </p>
+              <p className="highlight-hover">
+                Previously at Infosys (Amazon India), I developed enterprise-grade UI modules using React and TypeScript, focusing on stability, usability, and performance improvements for large-scale business workflows. Experienced with AWS Lambda, DynamoDB, API Gateway, S3, and IaC using CDK, along with CI/CD pipelines using GitLab, Jenkins, and AWS CodePipeline. Strong believer in SOLID principles, design patterns, and clean coding standards, with a growing focus on AI-integrated automation and intelligent monitoring solutions.
               </p>
               <ButtonWrapper
                 text="Download CV"

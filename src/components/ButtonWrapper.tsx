@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { Button } from "react-bootstrap";
 import { useState } from "react";
 import { motion } from "framer-motion";
