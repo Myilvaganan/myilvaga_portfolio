@@ -1,19 +1,48 @@
+/* =========================
+   LIGHT THEME (FULL CSS)
+   Replace your existing CSS with this
+   ========================= */
+
+:root {
+  --bg: #f6f8fc;
+  --section-bg: #ffffff;
+  --section-bg-2: #f1f5f9;
+
+  --text: #111827;
+  --muted: #374151;
+
+  --border: rgba(17, 24, 39, 0.12);
+  --shadow: 0 10px 25px rgba(17, 24, 39, 0.12);
+
+  --highlight: #078b4b;
+  --highlight-soft: #113f04;
+
+  --dark-green-bg: #c9d3cd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  background: #1b2435 !important;
+
+  background: var(--bg) !important;
+  color: var(--text) !important;
+
   font-family: Poppins, Inter, Roboto, Helvetica, Arial, sans-serif !important;
+
   height: 100vh;
   width: 100%;
 }
 
 .bg-dark-green {
-  background-color: #03331b;
+  background-color: var(--dark-green-bg) !important;
 }
 
-#contact > img {
-  opacity: 0.05;
+#contact>img {
+  opacity: 0.08;
 }
 
 .ls-1 {
@@ -62,7 +91,7 @@ body {
     height: fit-content;
   }
 
-  #about-content > p {
+  #about-content>p {
     width: 100% !important;
     text-align: justify;
   }
@@ -72,14 +101,16 @@ body {
   height: fit-content;
 }
 
+/* Sections */
 #about,
 #services,
 #skills {
-  background-color: #181818;
+  background-color: var(--section-bg) !important;
 }
 
+/* Text classes */
 .pr-text {
-  color: aliceblue !important;
+  color: var(--text) !important;
 }
 
 #about {
@@ -96,7 +127,7 @@ body {
   overflow: hidden;
 }
 
-#about-picture > img {
+#about-picture>img {
   width: 88%;
   height: 100%;
   border-radius: 2%;
@@ -108,7 +139,6 @@ body {
   margin-right: 2rem;
 }
 
-
 .header-box {
   height: 60%;
 }
@@ -118,51 +148,56 @@ body {
 }
 
 .name {
-  font-size: 46.2px;
+  font-size: 89.2px;
   font-weight: bolder;
+  color: var(--text) !important;
 }
 
-#about-content > p {
+#about-content>p {
   margin-top: 1.2rem;
-  color: aliceblue;
-  font-weight: 200;
+  color: var(--muted) !important;
+  font-weight: 400;
   width: 80%;
 }
 
-#about-content > button {
+#about-content>button {
   padding: 10px 45px;
 }
 
 .highlight {
-  color: #00bf63 !important;
+  color: var(--highlight) !important;
 }
 
 .bg-highlight {
-  background: #c1ff72 !important;
+  background: var(--highlight-soft) !important;
 }
 
 .lg-highlight {
-  color: #c1ff72 !important;
+  color: var(--highlight-soft) !important;
 }
 
+/* Contact Button */
 #contact-button {
-  background-color: #00bf63;
-  border-color: #c1ff72;
-  color: aliceblue;
+  background-color: var(--highlight) !important;
+  border-color: var(--highlight-soft) !important;
+  color: #ffffff !important;
+
   border-radius: 20px;
   padding: 3px 45px;
-  box-shadow: #c1ff72 0 3px 0;
-  font-weight: 400;
+
+  box-shadow: var(--highlight-soft) 0 3px 0;
+  font-weight: 500;
+
   transition: all 0.3s ease-in-out;
   overflow: hidden;
   position: relative;
 }
 
 #contact-button:hover {
-  border-color: #00bf63;
-  background-color: #c1ff72;
-  color: #1b2435;
-  box-shadow: #00bf63 0 3px 0;
+  border-color: var(--highlight) !important;
+  background-color: var(--highlight-soft) !important;
+  color: var(--text) !important;
+  box-shadow: var(--highlight) 0 3px 0;
 }
 
 #contact-button::after {
@@ -185,14 +220,17 @@ body {
   0% {
     left: -100%;
   }
+
   100% {
     left: 100%;
   }
 }
 
+/* Hover underline animation */
 .hover-underline-animation {
   display: inline-block;
   position: relative;
+  color: var(--muted) !important;
 }
 
 .hover-underline-animation::after {
@@ -203,7 +241,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #c1ff72;
+  background-color: var(--highlight-soft);
   transition: transform 0.25s ease-out;
 }
 
@@ -235,16 +273,17 @@ body {
   transform-origin: bottom right;
 }
 
+/* Cards animation */
 .card-animate {
   overflow: hidden;
-  opacity: 0; /* Initially hidden */
-  transform: translateY(50px); /* Start from below the screen */
-  transition:
-    opacity 0.25s ease,
-    transform 0.5s ease; /* Smooth transition */
-  box-shadow:
-          0 2.8px 2.2px rgb(3, 79, 42),
-          0 6.7px 5.3px rgb(3, 79, 42)
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.25s ease, transform 0.5s ease;
+
+  background: var(--section-bg) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow) !important;
+  border-radius: 12px;
 }
 
 /* Custom fade-in animation */
@@ -252,6 +291,7 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -260,35 +300,41 @@ body {
 @keyframes riseFromBottom {
   0% {
     opacity: 0;
-    transform: translateY(70px); /* Start below */
+    transform: translateY(70px);
   }
+
   100% {
     opacity: 1;
-    transform: translateY(0); /* End at its normal position */
+    transform: translateY(0);
   }
 }
 
 .card-animate.animate {
-  animation: riseFromBottom 0.8s ease-out forwards; /* Apply the rise animation */
+  animation: riseFromBottom 0.8s ease-out forwards;
 }
 
 .fade-in {
-  animation: fadeIn 5s ease-out;
+  animation: fadeIn 1.2s ease-out;
 }
 
+/* Bounce animation */
 @keyframes bounce {
   0% {
     transform: translateY(0);
   }
+
   25% {
     transform: translateY(-20px);
   }
+
   50% {
     transform: translateY(0);
   }
+
   75% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
@@ -299,18 +345,18 @@ body {
   animation: bounce 1s ease-in-out;
 }
 
+/* Highlight Hover */
 .highlight-hover {
-  transition:
-    background-color 0.4s ease-in-out,
-    transform 0.2s ease;
+  transition: background-color 0.4s ease-in-out, transform 0.2s ease;
   padding: 2px;
   border-radius: 5px;
   cursor: copy;
+  color: var(--text) !important;
 }
 
 .highlight-hover:hover {
-  background-color: aliceblue;
-  color: #1b2435 !important;
-  font-weight: 400 !important;
+  background-color: var(--section-bg-2);
+  color: var(--text) !important;
+  font-weight: 600 !important;
   transform: scale(1.05);
 }

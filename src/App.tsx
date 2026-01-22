@@ -5,7 +5,7 @@ import { Skills } from "./pages/Skills.tsx";
 import { Services } from "./pages/Services.tsx";
 import { Contact } from "./pages/Contact.tsx";
 import { motion, useSpring, useScroll } from "motion/react";
-import bgVideo from "./assets/bgVideo.mp4";
+import bgVideo from "./assets/bgVideo_2.mp4";
 
 function App() {
   const { scrollYProgress } = useScroll();
